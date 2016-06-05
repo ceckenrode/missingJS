@@ -2,7 +2,7 @@
 
 MissingJS is a set of utility functions not available in JavaScript, though present in other scripting languages such Ruby or Python.
 
-## Strings Methods
+## String Methods
 
 #### capitalize
 Returns the string with the first letter of every word capitalized.
@@ -40,7 +40,7 @@ Example:
 
 var largest = [1,2,3,4,5].max();
 
-// max is equal to 5
+// largest is equal to 5
 
 #### min
 Returns the smallest value found in an array
@@ -49,7 +49,7 @@ Example:
 
 var smallest = [-1,17,"bacon",0,-38].min();
 
-// max is equal to -38
+// smallest is equal to -38
 
 #### sum
 Returns the sum of all numbers found in an array. Will type convert strings when possible
