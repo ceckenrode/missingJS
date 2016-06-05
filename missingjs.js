@@ -41,3 +41,23 @@ Array.prototype.min = function() {
   }
   return min;
 };
+
+Array.prototype.sum = function() {
+	var sum = 0;
+  for (var i = 0; i < this.length; i++) {
+    if (!isNaN(Number(this[i]))) {
+      sum += Number(this[i]);
+    }
+  }
+  return sum;
+};
+
+Array.prototype.uniq = function() {
+	var uniqArray = [];
+  for (var i = 0; i < this.length; i++) {
+    if (uniqArray.indexOf(this[i]) === -1){
+			uniqArray.push(this[i]);
+		}
+  }
+  return uniqArray;
+};
