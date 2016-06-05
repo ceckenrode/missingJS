@@ -43,7 +43,7 @@ Array.prototype.min = function() {
 };
 
 Array.prototype.sum = function() {
-	var sum = 0;
+  var sum = 0;
   for (var i = 0; i < this.length; i++) {
     if (!isNaN(Number(this[i]))) {
       sum += Number(this[i]);
@@ -53,11 +53,26 @@ Array.prototype.sum = function() {
 };
 
 Array.prototype.uniq = function() {
-	var uniqArray = [];
+  var uniqArray = [];
   for (var i = 0; i < this.length; i++) {
-    if (uniqArray.indexOf(this[i]) === -1){
-			uniqArray.push(this[i]);
-		}
+    if (uniqArray.indexOf(this[i]) === -1) {
+      uniqArray.push(this[i]);
+    }
   }
   return uniqArray;
+};
+
+Array.prototype.remove = function(item) {
+  var newArray = [];
+
+  if (this.indexOf(item) === -1) {
+    return this;
+  } else {
+    for (var i = 0; i < this.length; i++) {
+      if (this[i] !== item) {
+        newArray.push(this[i]);
+      }
+    }
+  }
+  return newArray;
 };
