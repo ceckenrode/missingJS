@@ -78,6 +78,34 @@ var removed = [1,2,3,"43","d",2,"d",1,"43"].remove("43")
 
 // removed is equal to [1,2,3,"d",2,"d",1]
 
+#### random
+Returns a whole random number within a specified range
+
+Example:
+
+var random = random(1,100)
+
+//random is gives us a random number between 1 and 100 in this case. ie 87
+
+#### clone
+Clones an object or variable
+
+Example:
+
+obj2 = {
+  key: "one"
+}
+
+var obj1 = clone(obj2)
+
+obj1 == obj2
+//returns true
+obj1 === obj2
+//returns false
+
+obj1.key = 'two'
+
+
 ### Version
 1.0.0
 

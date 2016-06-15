@@ -1,6 +1,6 @@
 String.prototype.capitalize = function() {
   var newString = "";
-  for (var i; i < this.length; i++) {
+  for (var i = 0; i < this.length; i++) {
     if (i === 0 || this.charAt(i - 1) === " ") {
       newString += this.charAt(i).toUpperCase();
     } else {
@@ -76,3 +76,11 @@ Array.prototype.remove = function(item) {
   }
   return newArray;
 };
+
+function random(min, max) {
+  return Math.floor(Math.random() * max) + min;
+}
+
+function clone(obj) {
+  return JSON.parse(JSON.stringify(obj));
+}
