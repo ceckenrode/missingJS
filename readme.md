@@ -118,6 +118,8 @@ var arr = ['tom', 'alice', 'mike'];
 arr.take(0) === 'tom'
 arr === ['alice', 'mike']
 
+## Object Methods
+
 #### keyAt
 Returns the key at the specified index of an object. This is non destructive
 
