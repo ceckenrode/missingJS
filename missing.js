@@ -84,3 +84,19 @@ function random(min, max) {
 function clone(obj) {
   return JSON.parse(JSON.stringify(obj));
 }
+
+Array.prototype.take = function(x){
+  return this.slice(0,x)
+}
+
+Object.prototype.keyAt = function(index){
+  return Object.keys(this)[index];
+}
+
+Array.prototype.arrToObj = function(){
+  var obj = {};
+  for (var i = 0; i < this.length; i++) {
+    obj[i] = this[i]
+  }
+  return obj;
+}
